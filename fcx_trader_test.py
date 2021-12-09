@@ -43,7 +43,7 @@ def getMessage():
 
 # @server.route("/")
 # def pay():
-#     return "This is the fcx trading bot you can reach me @FCX_trading_bot on telegram"
+#     return "This is the BTT Trading Express you can reach me @FCX_trading_bot on telegram"
 
 @server.route('/dashboard')
 def dashboard():
@@ -109,7 +109,7 @@ Says: <b>{fcx_dp.dp_status_text}</b>
                 fcx_dp.user.account_balance = fcx_dp.user.account_balance + fcx_dp.recieved_amount
                 fcx_dp.commit()
                 text = f"You have been credited {fcx_dp.recieved_amount}"
-                dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTC"
+                dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTT"
                 bot.send_message(
                     fcx_dp.user.user_id,
                     text=text,
