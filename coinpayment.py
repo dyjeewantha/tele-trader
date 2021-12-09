@@ -276,3 +276,4 @@ class CoinPayments():
                        'version': self.version,
                        'format': self.format})
         return self.irequest('post', **params)
+
