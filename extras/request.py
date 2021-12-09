@@ -1,13 +1,13 @@
 
 headers = {'hmac': "4ec11f47ed22830713fb4a7c1fcbec28171f215ef1c7e6298f7cd90d9ecbfcf7bd41ce168d566265be15a3251ff8bd79f215a56dee115a216235953c8c248430"}
 
-encoded = b'amount=0.9&currency1=BTC&currency2=BTC&ipn_url=https%3A%2F%2F42d4741e.ngrok.io%2Fpay&cmd=create_transaction&key=953b0c668c9d75c2d3da984f62a00fd269dc66c6da701250a0d7e14b52449183&version=1&format=json'
+encoded = b'amount=0.9&currency1=BTT&currency2=BTT&ipn_url=https%3A%2F%2F42d4741e.ngrok.io%2Fpay&cmd=create_transaction&key=953b0c668c9d75c2d3da984f62a00fd269dc66c6da701250a0d7e14b52449183&version=1&format=json'
 
 sig = '4ec11f47ed22830713fb4a7c1fcbec28171f215ef1c7e6298f7cd90d9ecbfcf7bd41ce168d566265be15a3251ff8bd79f215a56dee115a216235953c8c248430'
 
 url = 'https://www.coinpayments.net/api.php'
 
-params = {'amount': Decimal('0.9'), 'cmd': 'create_transaction', 'currency1': 'BTC', 'currency2': 'BTC', 'format': 'json', 'ipn_url': 'https://42d4741e.ng...ok.io/pay', 'key': '953b0c668c9d75c2d3d...b52449183', 'version': 1}
+params = {'amount': Decimal('0.9'), 'cmd': 'create_transaction', 'currency1': 'BTT', 'currency2': 'BTT', 'format': 'json', 'ipn_url': 'https://42d4741e.ng...ok.io/pay', 'key': '953b0c668c9d75c2d3d...b52449183', 'version': 1}
 
 request_method = "post"
 
