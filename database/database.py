@@ -55,10 +55,10 @@ class Setup:
     def setup_admin():
         test_admin = Admin()
         test_admin.user_id = 1053579181
-        test_admin.name = "hixxi"
-        test_admin.merchant_ID =  "c4baf6ef23be73a2da7fa0531b2df323"
-        test_admin.merchant_pbkey =  "953b0c668c9d75c2d3da984f62a00fd269dc66c6da701250a0d7e14b52449183"
-        test_admin.merchant_pkey = "c68f21F77B13FE4D6617EfcD0287c036da7A3aB1A5f3e870fb179E940F5839Dd"
+        test_admin.name = "Zandy93"
+        test_admin.merchant_ID =  "7a52533349195fd518a34ffd446c8a0a"
+        test_admin.merchant_pbkey =  "80343df2dff487a2499ac6b2fc7d832d0b80cb4566107f6a03d4404e5b289b4e"
+        test_admin.merchant_pkey = "4672CFA54E54975177E5A2ae5a44e125c3687d9cdF15606Da96c2ba49B994037"
         test_admin.commit()
         return
 
