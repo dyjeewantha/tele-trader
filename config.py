@@ -41,14 +41,14 @@ select_lang_markup = [
 fcx_markup = {
 
 "en": [
-    ["Balance BTC"],
+    ["Balance BTT"],
     ["🏦 Deposit", "🏧 Withdrawal"],
     ["💵 Reinvest", "📜 Transactions"],
     ["⛳ Team", "🇬🇧 Language", "🤝 Support"]
     ],
     
 "it": [
-    ["Bilance BTC"],
+    ["Bilance BTT"],
     ["🏦 Depositare", "🏧 Ritiro"],
     ["💵 Reinvest", "📜 Transazioni"],
     ["⛳ Squadra", "🇬🇧 linguaggio", "🤝 Supporto"]
@@ -56,8 +56,8 @@ fcx_markup = {
 }
 
 # fcx_markup_balances = {
-#     "en": f"Balances  {fcx_user.account_balance} BTC",
-#     "it": f"Bilance  {fcx_user.account_balance} BTC"
+#     "en": f"Balances  {fcx_user.account_balance} BTT",
+#     "it": f"Bilance  {fcx_user.account_balance} BTT"
 # }
 
 
