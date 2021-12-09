@@ -29,8 +29,8 @@ Seleziona la tua lingua preferita
         else:
             lang = fcx_user.language
             fcx_markup_balances = {
-                        "en": f"Balance  {fcx_user.account_balance} BTC",
-                        "it": f"Bilance  {fcx_user.account_balance} BTC"
+                        "en": f"Balance  {fcx_user.account_balance} BTT",
+                        "it": f"Bilance  {fcx_user.account_balance} BTT"
                         }
             dashboard[lang].keyboard[0][0] = fcx_markup_balances[lang]
 
@@ -44,26 +44,26 @@ Seleziona la tua lingua preferita
 
                 "en": f"""
 Your Account Balance:
-<strong>{balance} BTC</strong>
+<strong>{balance} BTT</strong>
 Total Active Investments:
-<strong>{active_investment} BTC</strong>
+<strong>{active_investment} BTT</strong>
 Total Active Reinvestments:
-<strong>{active_reinvestment} BTC</strong>
+<strong>{active_reinvestment} BTT</strong>
 Total Pending Investments:
-<strong>{pending_investment} BTC</strong>
+<strong>{pending_investment} BTT</strong>
                 """,
 
                 "it": f"""
 
 
 Saldo del conto:
-<strong>{balance} BTC</strong>
+<strong>{balance} BTT</strong>
 Investimenti attivi:
-<strong>{active_investment} BTC</strong>
+<strong>{active_investment} BTT</strong>
 Reinvestimenti attivi:
-<strong>{active_reinvestment} BTC</strong>
+<strong>{active_reinvestment} BTT</strong>
 Investimenti in sospeso:
-<strong>{pending_investment} BTC</strong>
+<strong>{pending_investment} BTT</strong>
 
 
     """

@@ -30,41 +30,23 @@ https://t.me/{bot_name}?start={user_id}
         text_refferal = {
         "en": """
 Refferal system:
-1. Level 5%
-2. Level 3%
+1. Level 4%
+2. Level 2%
 3. Level 1%
 
-Team:
-1. Level partner: 10
-2. Level partner:  5
-3. Level partner:  2
-
-Team volume:
-1. Level: 1.000000 BTC
-2. Level  0.557777 BTC
-3. Level  0.236675 BTC
 
 Total team earnings:
-xx.xxxxxx BTC
+xx.xxxxxx BTT
         """,
         "it": """
 Livelli Bonus:
-1. Livello 5%
-2. Livello 3%
+1. Livello 4%
+2. Livello 2%
 3. Livello 1%
 
-Team:
-1. Partner di livello: 10
-2. Partner di livello: 5
-3. Partner di livello: 2
-
-Totale della squadra:
-1. Livello: 1.000000 BTC
-2. Livello 0,557777 BTC
-3. Livello 0,236675 BTC
 
 Guadagno totale della squadra:
-xx.xxxxxx BTC
+xx.xxxxxx BTT
         """
         }
         text_enter_commission = {
@@ -75,7 +57,7 @@ Your commissions will be added automatically to your main account balance each t
 Le Vostre commissioni saranno aggiunte automaticamente al saldo del Vostro conto principale ogni volta che un membro del team effettua un deposito o un reinvestimento. 
         """
         }
-        dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTC"
+        dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTT"
         bot.send_message(
                 user_id,
                 text=text_info[lang] + text_refferal[lang] + text_enter_commission[lang],

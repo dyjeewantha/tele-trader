@@ -11,28 +11,28 @@ def generate_address(message):
     try:
 
         amount = Decimal(message.text)
-        dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTC"
+        dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTT"
         # wait_text = {
         #     "en": """Please wait for our system to generate your New Deposit Address.""",
         #     "it": """Si prega di attendere che il nostro sistema generi il Vostro nuovo indirizzo di deposito."""
         # }
         arrival_text = {
-            "en": """Here is your personal BTC address for your Investments ⬇️⬇️⬇️""",
+            "en": """Here is your personal BTT address for your Investments ⬇️⬇️⬇️""",
             "it": """Qui il Vostro indirizzo personale Bitcoin per i Vostri investimenti:"""
         }
         duration_text = {
             "en": """
 Bitcoin Amount:
-Min: 0.025 BTC
-Max: 5 BTC
+Min: 0.025 BTT
+Max: 5 BTT
 
 This address will be active for 4 hours.
 Funds will show up after first blockchain confirmation.
 """,
         "it": """
 Importo Bitcoin: 
-Min. 0,025 BTC 
-Max. 5 BTC
+Min. 0,025 BTT 
+Max. 5 BTT
 
 Questo indirizzo sarà attivo per 4 ore.
 I fondi appariranno dopo la prima conferma della Blockchain.
@@ -53,7 +53,7 @@ I fondi appariranno dopo la prima conferma della Blockchain.
                 chat_id, text=arrival_text.get(lang)
             )
             # payment_details = payment_client.create_transaction({"amount":amount, "currency1":"LTCT", "currency2":"LTCT"})
-            payment_details = payment_client.create_transaction({"amount":amount, "currency1":"btc", "currency2":"btc"})
+            payment_details = payment_client.create_transaction({"amount":amount, "currency1":"BTT", "currency2":"BTT"})
 
             try:
                 pd = payment_details["result"]
@@ -99,8 +99,8 @@ I fondi appariranno dopo la prima conferma della Blockchain.
                 )
         else:
             text = {
-                "en": """<b>Maximum amount allowed is 5BTC</b>""",
-                "it": """Maximum amount allowed is 5BTC (italian)"""
+                "en": """<b>Maximum amount allowed is 5BTT</b>""",
+                "it": """Maximum amount allowed is 5BTT (italian)"""
             }
             bot.send_message(
                 chat_id,
@@ -131,9 +131,9 @@ def deposit(message):
     message_id = message.message_id
     deposit_amount_text = {
         "en": """<b>Enter the amount you wish to deposit 
-(min: 0.025 BTC max: 5 BTC)</b>""",
+(min: 0.025 BTT max: 5 BTT)</b>""",
         "it": """Enter the amount you wish to deposit(italian
-(min: 0.025 BTC max: 5 BTC)"""
+(min: 0.025 BTT max: 5 BTT)"""
     }
     bot.send_message(
         chat_id,
@@ -161,7 +161,7 @@ def promo(message):
     fcx_user = db.User.get_user(user_id)
     balance = fcx_user.account_balance
     lang = fcx_user.language
-    dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTC"
+    dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTT"
     promo = message.text.split(" ")[-1]
     try:
         promo = Decimal(promo)
@@ -174,10 +174,10 @@ def promo(message):
             balance=fcx_user.account_balance
             )
         fcx_transact.commit()
-        dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTC"
+        dashboard[lang].keyboard[0][0] = f"Balances  {fcx_user.account_balance} BTT"
         bot.send_message(
             chat_id,
-            text=f"You've been gifted {promo} virtual btc to test other features",
+            text=f"You've been gifted {promo} virtual BTT to test other features",
             reply_markup=dashboard.get(lang)
         )
     except ValueError:

@@ -30,8 +30,8 @@ def enter_address(message):
         else:
             try:
                 set_wallet_address_text = {
-                    'en': "<b>Set your BTC wallet address</b>",
-                    'it': "<b>Imposta l'indirizzo del tuo portafoglio BTC</b>"
+                    'en': "<b>Set your BTT wallet address</b>",
+                    'it': "<b>Imposta l'indirizzo del tuo portafoglio BTT</b>"
                 }
                 bot.send_message(
                     chat_id, 
@@ -150,11 +150,11 @@ def withdrawal(message):
     text_info = {
         "en": f"""
 You can create a payout request any time, depending on your account balance.
-Minimum amount to withdraw is 0.002 BTC.
+Minimum amount to withdraw is 0.002 BTT.
         """,
         "it": f"""
 E’ possibile fare una richiesta di pagamento in qualsiasi momento, a seconda del saldo del Vostro conto.
-L’importo minimo di prelievo è di 0,002 BTC.
+L’importo minimo di prelievo è di 0,002 BTT.
         """
         }
     text_insufficient = {

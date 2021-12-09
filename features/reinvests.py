@@ -29,8 +29,8 @@ def verify_reinvest(message):
                 balance = fcx_user.account_balance
                 lang = fcx_user.language
                 fcx_markup_balances = {
-                        "en": f"Balances  {fcx_user.account_balance} BTC",
-                        "it": f"Bilance  {fcx_user.account_balance} BTC"
+                        "en": f"Balances  {fcx_user.account_balance} BTT",
+                        "it": f"Bilance  {fcx_user.account_balance} BTT"
                         }
                 dashboard[lang].keyboard[0][0] = fcx_markup_balances[lang]
                 try:
@@ -58,9 +58,9 @@ def verify_reinvest(message):
                         else:
                                 investment_confirmation = {
                                         "en": f"""
-        You're about to make a reinvestment of:{reinvestment_amount} BTC""",
+        You're about to make a reinvestment of:{reinvestment_amount} BTT""",
                                         "it": f"""
-        Stai per effettuare un reinvestimento di:{reinvestment_amount} BTC"""
+        Stai per effettuare un reinvestimento di:{reinvestment_amount} BTT"""
                                 }
                                 bot.send_message(
                                         chat_id,
@@ -95,17 +95,17 @@ def reinvest(message):
         lang = fcx_user.language
 
         fcx_markup_balances = {
-        "en": f"Balances  {fcx_user.account_balance} BTC",
-        "it": f"Bilance  {fcx_user.account_balance} BTC"
+        "en": f"Balances  {fcx_user.account_balance} BTT",
+        "it": f"Bilance  {fcx_user.account_balance} BTT"
         }
         dashboard[lang].keyboard[0][0] = fcx_markup_balances[lang]
         text_info = {
                 "en": f"""
 You can make a reinvest any time, depending on your account balance . 
-Minimum amount to reinvest is 0.002 BTC. Once credited, each reinvestment counts for itself and runs for 180 days.
+Minimum amount to reinvest is 0.002 BTT. Once credited, each reinvestment counts for itself and runs for 180 days.
         """,
                 "it": f"""
-Potete effettuare un reinvestimento in qualsiasi momento, a seconda del saldo del Vostro conto. L'importo minimo da reinvestire è di 0,002 BTC. Una volta accreditato, ogni reinvestimento vale per se stesso e dura 180 giorni.
+Potete effettuare un reinvestimento in qualsiasi momento, a seconda del saldo del Vostro conto. L'importo minimo da reinvestire è di 0,002 BTT. Una volta accreditato, ogni reinvestimento vale per se stesso e dura 180 giorni.
         """
         }
         text_insufficient = {

@@ -22,13 +22,13 @@ def transaction(message):
     try:
         for value in transactions:
             if value.transaction_type=="deposit" and value.status=="Completed":
-                deposits.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTC")
+                deposits.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTT")
             if value.transaction_type=="withdrawal":
-                payouts.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTC")
+                payouts.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTT")
             if value.transaction_type=="reinvestment":
-                reinvestments.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTC")
+                reinvestments.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTT")
             if value.transaction_type=="commissions":
-                commissions.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTC")
+                commissions.append(value.date.split("T")[0]+"   "+str(value.amount)+" BTT")
 
         def listToString(s):
             str1 = """"""
@@ -76,8 +76,8 @@ def transaction(message):
             }
 
         fcx_markup_balances = {
-                    "en": f"Balances  {fcx_user.account_balance} BTC",
-                    "it": f"Bilance  {fcx_user.account_balance} BTC"
+                    "en": f"Balances  {fcx_user.account_balance} BTT",
+                    "it": f"Bilance  {fcx_user.account_balance} BTT"
                     }
         dashboard[lang].keyboard[0][0] = fcx_markup_balances[lang]
         bot.send_message(

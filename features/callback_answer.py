@@ -10,8 +10,8 @@ def callback_answer(call):
     balance = fcx_user.account_balance
     lang = fcx_user.language
     fcx_markup_balances = {
-        "en": f"Balances  {fcx_user.account_balance} BTC",
-        "it": f"Bilance  {fcx_user.account_balance} BTC"
+        "en": f"Balances  {fcx_user.account_balance} BTT",
+        "it": f"Bilance  {fcx_user.account_balance} BTT"
         }
     dashboard[lang].keyboard[0][0] = fcx_markup_balances[lang]
     if call.data == "confirm_address":
@@ -62,8 +62,8 @@ Ora puoi effettuare un <b>prelievo</b>
             parse_mode="html"
         )
         fcx_markup_balances = {
-            "en": f"Balances  {fcx_user.account_balance} BTC",
-            "it": f"Bilance  {fcx_user.account_balance} BTC"
+            "en": f"Balances  {fcx_user.account_balance} BTT",
+            "it": f"Bilance  {fcx_user.account_balance} BTT"
             }
         dashboard[lang].keyboard[0][0] = fcx_markup_balances[lang]
         bot.send_message(
@@ -116,8 +116,8 @@ per 180 giorni fino al {close_date}</b>
                 """
             }
             fcx_markup_balances = {
-                "en": f"Balances  {fcx_user.account_balance} BTC",
-                "it": f"Bilance  {fcx_user.account_balance} BTC"
+                "en": f"Balances  {fcx_user.account_balance} BTT",
+                "it": f"Bilance  {fcx_user.account_balance} BTT"
                 }
             dashboard[lang].keyboard[0][0] = fcx_markup_balances[lang]
             bot.send_message(
