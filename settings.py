@@ -1,13 +1,13 @@
 # Bot token provided by BotFather
-
+TOKEN = "5519479434:AAE719MsOPWSlu26ASt4o1IdMGvKrwT4T3g"
 from sqlalchemy import create_engine
 
 
-# PUBLIC_KEY = "80343df2dff487a2499ac6b2fc7d832d0b80cb4566107f6a03d4404e5b289b4e"
-# PRIVATE_KEY = "4672CFA54E54975177E5A2ae5a44e125c3687d9cdF15606Da96c2ba49B994037"
-# Merchant_ID = "7a52533349195fd518a34ffd446c8a0a"
-# IPN_secret = "btttradingexpress"
-# ADMIN_ID = 1355336561
+PUBLIC_KEY = "b244d10593047726ba5e9d28618e0ccb8011b0e3d5fa46ebc7fa06a3bddea76b"
+PRIVATE_KEY = "b339ffefdc3Ca98e05C118c96ABFd04b41eb1f000Ea38767B8Dc618d9765a3D7"
+Merchant_ID = "7be647419765bcca807fa020a62c03d0"
+IPN_secret = "Myinves"
+ADMIN_ID = 551129540
 
 DEBUG = not True
 
