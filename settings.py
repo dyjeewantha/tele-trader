@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 
 PUBLIC_KEY = "b244d10593047726ba5e9d28618e0ccb8011b0e3d5fa46ebc7fa06a3bddea76b"
 PRIVATE_KEY = "b339ffefdc3Ca98e05C118c96ABFd04b41eb1f000Ea38767B8Dc618d9765a3D7"
-merchant_ID = "7be647419765bcca807fa020a62c03d0"
+MERCHANT_ID = "7be647419765bcca807fa020a62c03d0"
 IPN_secret = "Myinves"
 ADMIN_ID = 551129540
 
