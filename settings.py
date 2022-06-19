@@ -13,14 +13,14 @@ DEBUG = not True
 
 if DEBUG==False:
     print("\033[1;35;40m Running in production mode")
-    TOKEN = "5086018821:AAGjDVmpp-bMK4MbSxjmgBAAP9VNFcceO-E" #BTT Trading Express
-    URL = 'https://btt-trading-express.herokuapp.com/'
+    TOKEN = "5519479434:AAE719MsOPWSlu26ASt4o1IdMGvKrwT4T3g" #BTT Trading Express
+    URL = 'https://myinvespace.herokuapp.com//'
     try:
         import os
         DATABASE_URL = os.environ['DATABASE_URL']
     except KeyError:
         # DATABASE_URL="postgres://ijmhoygudgmxru:49370293052dcaf5a977de733a4cb129f0f6a001f2a64da604fc4a4b5927af7e@ec2-44-193-111-218.compute-1.amazonaws.com:5432/d822275vn10alp"
-        DATABASE_URL="postgres://ijmhoygudgmxru:49370293052dcaf5a977de733a4cb129f0f6a001f2a64da604fc4a4b5927af7e@ec2-44-193-111-218.compute-1.amazonaws.com:5432/d822275vn10alp"
+        DATABASE_URL="postgres://ioegvgkzxmrtzw:c5455b70226ed75ec6a2d82f91c75c1ab3eb46c01ff4550a7d1fcd0ad9b817c0@ec2-52-204-195-41.compute-1.amazonaws.com:5432/d7j9dqto5av2ej"
     db_url = DATABASE_URL.split(":")
 
     DATABASE_URI_VAR =f'postgres+psycopg2:{db_url[1]}:{db_url[2]}:{db_url[3]}'
@@ -29,7 +29,7 @@ if DEBUG==False:
 
 else:
     print("\033[1;32;40m Running in Development mode")
-    TOKEN = "5086018821:AAGjDVmpp-bMK4MbSxjmgBAAP9VNFcceO-E"
+    TOKEN = "5519479434:AAE719MsOPWSlu26ASt4o1IdMGvKrwT4T3g"
 
     URL = "https://3a7a746b.ngrok.io/"
     DATABASE_URL = 'postgres+psycopg2://postgres:postgres@localhost:5432'
