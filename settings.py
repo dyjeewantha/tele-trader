@@ -32,7 +32,7 @@ else:
     TOKEN = "5519479434:AAE719MsOPWSlu26ASt4o1IdMGvKrwT4T3g"
 
     URL = "https://3a7a746b.ngrok.io/"
-    DATABASE_URL = 'postgres+psycopg2://postgres:postgres@localhost:5432'
+    DATABASE_URL = 'postgres://ioegvgkzxmrtzw:c5455b70226ed75ec6a2d82f91c75c1ab3eb46c01ff4550a7d1fcd0ad9b817c0@ec2-52-204-195-41.compute-1.amazonaws.com:5432/d7j9dqto5av2ej'
     ADMIN_ID = 1053579181
 
     SQLITE = 'sqlite:///database/database.db'
