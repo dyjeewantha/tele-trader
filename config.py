@@ -16,7 +16,7 @@ from settings import TOKEN, URL
 bot = telebot.TeleBot(TOKEN, threaded=True)
 admin_db = db.session.query(db.Admin).first()
 
-merchant_ID = admin_db.merchant_ID
+MERCHANT_ID = admin_db.merchant_ID
 PUBLIC_KEY = admin_db.merchant_pbkey
 PRIVATE_KEY = admin_db.merchant_pkey
 ADMIN_ID = admin_db.user_id
